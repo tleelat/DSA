@@ -1,0 +1,11 @@
+#fibonacci number using recursion
+# Constraints : 0 <= n <= 30
+
+class Solution:
+    def func(self, num):
+        if num == 1 or num == 0: 
+            return num 
+        return self.func(num-1)+self.func(num-2)
+
+    def fib(self, n: int) -> int:
+        return self.func(n)
